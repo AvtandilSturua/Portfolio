@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kdam+Thmor+Pro&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: white;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+header {
+  width: 100%;
+  height: 25vh;
+}
+#head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.navigation {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.navigation ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px;
+}
+.navigation a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  margin: 15px;
+  font-size: 20px;
+}
+.navigation li {
+  text-align: center;
+  line-height: 20px;
+}
+.navigation span {
+  opacity: 0.5;
+  text-align: end;
+  font-size: 15px;
+}
+
+.navopen {
+  position: absolute;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+}
+.navopen i {
+  font-size: 25px;
+  color: black;
+  padding: 5px;
+}
+.mobilenavigation {
+  position: absolute;
+  top: 0;
+  left: -101%;
+  width: 30vh;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  line-height: 50px;
+  transition: 0.8s ease-in;
+}
+.mobilenavigation.active {
+  left: 0%;
+  transition: 0.8s ease-in;
+}
+
+.mobilenavigation ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  top: 10%;
+}
+.mobilenavigation a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  margin: 10px;
+  font-size: 19px;
+}
+.navclose {
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+.navclose i {
+  font-size: 30px;
+  color: white;
+  padding: 5px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+#content {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  font-size: 30px;
+}
+.skill-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.skill {
+  width: 50vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+.text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+}
+.text h1 {
+  font-size: 20px;
+}
+.percent {
+  width: 100%;
+  height: 20px;
+  background-image: linear-gradient(to right, red 70%, white 20%);
+  border: 2px solid black;
+}
+.percent1 {
+  width: 100%;
+  height: 20px;
+  background-image: linear-gradient(to right, blue 65%, white 20%);
+  border: 2px solid black;
+}
+.percent2 {
+  width: 100%;
+  height: 20px;
+  background-image: linear-gradient(to right, yellow 50%, white 20%);
+  border: 2px solid black;
+}
+.percent3 {
+  width: 100%;
+  height: 20px;
+  background-image: linear-gradient(to right, #333 2%, white 20%);
+  border: 2px solid black;
+}
+
+@media (max-width: 620px) {
+  .navopen {
+    display: flex;
+    top: 1%;
+  }
+  #head ul {
+    display: none;
+  }
+}
+@media (max-width: 445px) {
+  .skill {
+    width: 45vh;
+  }
+}
+@media (max-width: 390px) {
+  .skill {
+    width: 40vh;
+  }
+}
+@media (max-width: 345px) {
+  .skill {
+    width: 35vh;
+  }
+}
+@media (max-width: 300px) {
+  .skill {
+    width: 30vh;
+  }
+}
